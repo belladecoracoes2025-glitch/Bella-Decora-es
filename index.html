@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Decorações</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="bella.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="navbar container">
+            <div class="brand">
+                <h1>Bella Decorações</h1>
+            </div>
+
+            <nav class="nav-links" aria-label="menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+                <a href="portifóli.html">Portifólios Gerais</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- PORTFÓLIO -->
+    <main class="container" id="portfolio">
+        <h2 style="
+            font-size:34px;
+            margin-top:40px;
+            margin-bottom:10px;
+            text-align:center;
+            font-weight:700;
+            background:linear-gradient(135deg,#d4af37,#f7d878,#d4af37);
+            -webkit-background-clip:text;
+            background-clip:text;
+            -webkit-text-fill-color:transparent;">
+            Portifólios
+        </h2>
+
+        <section class="portfolio-section">
+
+            <!-- CARD 1 -->
+            <article class="card" onclick="openModal('Decoração 3', 'R$ 520,00')">
+                <img class="thumb" src="1.jpg" alt="Sala clássica decorada">
+
+                <div class="card-body">
+                    <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+                        <h3>Palmeiras</h3>
+                        <div class="badge">R$ 150,00</div>
+                    </div>
+
+                    <div class="card-actions">
+                        <a href="https://wa.me/5511991888845" class="view-btn" style="text-decoration:none; display:inline-block; text-align:center;">
+                            Chamar no WhatsApp
+                        </a>
+                        <small style="color:rgba(34,34,34,0.45); font-weight:600;">2025</small>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="card">
+                <img class="thumb" src="2.jpg" alt="Mesa decorada para eventos">
+
+                <div class="card-body">
+                    <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+                        <h3>Futebol</h3>
+                        <div class="badge">R$ 150,00</div>
+                    </div>
+
+                    <div class="card-actions">
+                        <a href="https://wa.me/5511991888845" class="view-btn" style="text-decoration:none; display:inline-block; text-align:center;">
+                            Chamar no WhatsApp
+                        </a>
+                        <small style="color:rgba(34,34,34,0.45); font-weight:600;">2025</small>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="card">
+                <img class="thumb" src="3.jpg" alt="Arranjo floral luxuoso">
+
+                <div class="card-body">
+                    <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+                        <h3>Animais</h3>
+                        <div class="badge">R$ 150,00</div>
+                    </div>
+
+                    <div class="card-actions">
+                        <a href="https://wa.me/5511991888845" class="view-btn" style="text-decoration:none; display:inline-block; text-align:center;">
+                            Chamar no WhatsApp
+                        </a>
+                        <small style="color:rgba(34,34,34,0.45); font-weight:600;">2025</small>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+
+
+    <!-- SOBRE NÓS -->
+    <section id="sobre" style="
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+        background: #ffffff;">
+        
+        <div style="
+            max-width: 1100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;">
+
+            <!-- FOTO REDONDA -->
+            <div style="
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 6px solid #d4a656;
+                box-shadow: 0px 4px 18px rgba(0,0,0,0.2);
+                flex-shrink: 0;">
+                <img src="casal.png" alt="Sobre Nós" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+
+            <!-- TEXTO -->
+            <div style="max-width: 550px;">
+                <h2 style="font-size:42px; font-weight:800; color:#d4a656; margin-bottom:20px;">
+                    Sobre Nós
+                </h2>
+
+                <p style="font-size:18px; line-height:1.6; color:#444; font-weight:500;">
+                    Na Bella Decorações, transformamos cada evento em um momento único.
+                    Trabalhamos com amor, dedicação e muito profissionalismo para entregar
+                    a sua festa dos sonhos com qualidade, elegância e cuidado em cada detalhe.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact-section" style="padding:60px 20px; text-align:center; background:var(--rosa-grad);">
+        
+        <h2 style="font-size:32px; margin-bottom:15px; font-weight:600; color:#333;">
+            Contato
+        </h2>
+
+        <p style="font-size:18px; margin-bottom:25px; color:#555;">
+            Fale com a Bella Decorações
+        </p>
+
+        <a href="https://wa.me/5511991888845" target="_blank" style="
+            padding:15px 30px;
+            background:#000;
+            color:#fff;
+            text-decoration:none;
+            border-radius:8px;
+            font-size:18px;
+            display:inline-block;
+            margin-bottom:20px;">
+            Chamar no WhatsApp
+        </a>
+
+        <p style="font-size:18px; color:#333;">
+            Instagram: <strong>@belladecoracoesparafesta</strong>
+        </p>
+    </section>
+
+
+
+    <!-- RODAPÉ -->
+    <footer style="text-align:center; padding:20px; background:#000; color:#fff; font-size:14px;">
+        © 2025 Bella Decorações — Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
